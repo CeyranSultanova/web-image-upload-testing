@@ -1,4 +1,4 @@
-# web-image-upload-testing
+# Web-image-upload-testing
 Manual QA portfolio project covering functional, validation, boundary and negative testing of a web image upload feature.
 # Web Image Upload Feature – QA Testing
 
