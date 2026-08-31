@@ -1,0 +1,32 @@
+| #  | Priority   | Test Case                                                                                                                       |
+| -- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | **High**   | **Validate** that the user can successfully upload a valid JPEG image smaller than 10 MB.                                       |
+| 2  | **High**   | **Verify** that the uploaded image is successfully saved.                                                                       |
+| 3  | **High**   | **Check** that the saved image is displayed correctly after saving the page/form.                                               |
+| 4  | **High**   | **Validate** that the user can continue and successfully save the page without uploading an image.                              |
+| 5  | **High**   | **Verify** that the image icon is displayed on the page when an image has been successfully added.                              |
+| 6  | **High**   | **Verify** that the image icon is not displayed when no image has been added.                                                   |
+| 7  | **High**   | **Validate** that only one image can be added.                                                                                  |
+| 8  | **High**   | **Verify** that the system prevents adding a second image when one image already exists.                                        |
+| 9  | **High**   | **Validate** that a JPEG image with a size just below 10 MB can be uploaded successfully.                                       |
+| 10 | **High**   | **Verify** that an image larger than or equal to 10 MB is rejected according to the `<10 MB` requirement.                       |
+| 11 | **High**   | **Verify** that unsupported file formats such as PNG, GIF, WEBP, PDF, SVG, BMP, and TIFF cannot be uploaded.                    |
+| 12 | **High**   | **Check** that an appropriate validation message is displayed when an unsupported file format is uploaded.                      |
+| 13 | **High**   | **Check** that an appropriate validation message is displayed when the image exceeds the allowed size.                          |
+| 14 | **High**   | **Validate** that the user can edit/replace an already saved image.                                                             |
+| 15 | **High**   | **Verify** that the newly selected image replaces the previous image after editing and saving.                                  |
+| 16 | **High**   | **Check** that the old image is no longer displayed after it has been replaced.                                                 |
+| 17 | **High**   | **Validate** that the user can delete a previously saved image.                                                                 |
+| 18 | **High**   | **Verify** that the deleted image is no longer displayed after saving/reloading the page.                                       |
+| 19 | **High**   | **Verify** that the image icon disappears after the saved image is deleted.                                                     |
+| 20 | **High**   | **Validate** that the user can continue using/saving the page after deleting the image.                                         |
+| 21 | **High**   | **Verify** that the uploaded image remains available after refreshing/reopening the page.                                       |
+| 22 | **High**   | **Check** that cancelling the image selection does not add or modify an image.                                                  |
+| 23 | **High**   | **Validate** that a corrupted or invalid JPEG file cannot be uploaded as a valid image.                                         |
+| 24 | **High**   | **Verify** that renaming an unsupported file extension to `.jpeg` does not bypass file validation.                              |
+| 25 | **Medium** | **Validate** that JPEG files with `.jpeg` and `.jpg` extensions behave according to the specified supported-format requirement. |
+| 26 | **Medium** | **Check** that an image with a long filename can be uploaded successfully when all other requirements are met.                  |
+| 27 | **Medium** | **Check** that an image filename containing spaces and special characters does not break the upload functionality.              |
+| 28 | **Medium** | **Verify** that repeated clicks on the upload/save action do not create duplicate images.                                       |
+| 29 | **Medium** | **Check** that the image and its icon are displayed correctly after logout/login or reopening the saved entity.                 |
+| 30 | **Medium** | **Verify** that an upload failure/network error does not incorrectly show the image as successfully saved.                      |
