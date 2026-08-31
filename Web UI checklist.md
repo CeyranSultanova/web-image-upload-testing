@@ -1,32 +1,36 @@
-| ID     | Priority | Checklist                                                                                                          |
-| ------ | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| TC-001 | High     | **Verify** that the user can successfully upload a valid JPEG image smaller than 10 MB.                            |
-| TC-002 | High     | **Verify** that the uploaded image is successfully saved.                                                          |
-| TC-003 | High     | **Verify** that the saved image is displayed correctly after saving the page/form.                                 |
-| TC-004 | High     | **Verify** that the user can continue and save without uploading an image.                                         |
-| TC-005 | High     | **Verify** that the image icon is displayed when an image has been successfully added.                             |
-| TC-006 | High     | **Verify** that the image icon is not displayed when no image has been added.                                      |
-| TC-007 | High     | **Verify** that only one image can be added.                                                                       |
-| TC-008 | High     | **Verify** that the system prevents adding a second image when an image already exists.                            |
-| TC-009 | High     | **Verify** that a JPEG image just below 10 MB can be uploaded successfully.                                        |
-| TC-010 | High     | **Verify** that a JPEG image of exactly 10 MB is rejected.                                                         |
-| TC-011 | High     | **Verify** that a JPEG image larger than 10 MB is rejected.                                                        |
-| TC-012 | High     | **Verify** that unsupported file formats such as PNG, GIF, WEBP, PDF, SVG, BMP, and TIFF are rejected.             |
-| TC-013 | High     | **Verify** that an appropriate validation message is displayed for an unsupported file format.                     |
-| TC-014 | High     | **Verify** that an appropriate validation message is displayed when the image exceeds the allowed size.            |
-| TC-015 | High     | **Verify** that the user can edit/replace an already saved image.                                                  |
-| TC-016 | High     | **Verify** that the new image successfully replaces the previously saved image.                                    |
-| TC-017 | High     | **Verify** that the previous image is no longer displayed after replacement.                                       |
-| TC-018 | High     | **Verify** that the user can delete a previously saved image.                                                      |
-| TC-019 | High     | **Verify** that the deleted image is no longer displayed after saving or refreshing the page.                      |
-| TC-020 | High     | **Verify** that the image icon disappears after the image is deleted.                                              |
-| TC-021 | High     | **Verify** that the user can continue and save after deleting the image.                                           |
-| TC-022 | High     | **Verify** that the uploaded image remains available after refreshing or reopening the page.                       |
-| TC-023 | High     | **Verify** that cancelling image selection does not add or modify an image.                                        |
-| TC-024 | High     | **Verify** that a corrupted or invalid JPEG file is rejected.                                                      |
-| TC-025 | High     | **Verify** that renaming an unsupported file extension to `.jpeg` does not bypass file validation.                 |
-| TC-026 | Medium   | **Verify** that `.jpeg` and `.jpg` files are handled according to the supported-format requirement.                |
-| TC-027 | Medium   | **Verify** that an image with a long filename can be uploaded successfully.                                        |
-| TC-028 | Medium   | **Verify** that an image filename containing spaces or special characters does not break the upload functionality. |
-| TC-029 | Medium   | **Verify** that repeated clicks on the upload/save action do not create duplicate images.                          |
-| TC-030 | High     | **Verify** that an upload or network failure does not incorrectly show the image as successfully sav               |
+# Image Upload – Functional & UI Checklist
+
+| Check | ID | Priority | Checklist Item |
+|---|---|---|---|
+| ☐ | UI-001 | High | Validate that the user can upload a valid JPEG image smaller than 10 MB. |
+| ☐ | UI-002 | High | Validate that the uploaded image is displayed correctly after selection. |
+| ☐ | UI-003 | High | Validate that the user can successfully save the entity with an uploaded image. |
+| ☐ | UI-004 | High | Validate that the saved image remains displayed after page refresh. |
+| ☐ | UI-005 | High | Validate that the saved image remains displayed after reopening the entity. |
+| ☐ | UI-006 | Critical | Validate that the user can save and continue without uploading an image. |
+| ☐ | UI-007 | High | Validate that the image icon appears when an image has been successfully saved. |
+| ☐ | UI-008 | High | Validate that the image icon is not displayed when no image exists. |
+| ☐ | UI-009 | Critical | Validate that only one image can be associated with the entity. |
+| ☐ | UI-010 | High | Validate that the user cannot add a second image without replacing the existing image. |
+| ☐ | UI-011 | Critical | Validate that a JPEG image just below 10 MB is accepted. |
+| ☐ | UI-012 | Critical | Validate that a JPEG image of exactly 10 MB is rejected because the allowed size is less than 10 MB. |
+| ☐ | UI-013 | Critical | Validate that a JPEG image larger than 10 MB is rejected. |
+| ☐ | UI-014 | High | Validate that an appropriate validation message is displayed when the file exceeds the allowed size. |
+| ☐ | UI-015 | Critical | Validate that unsupported file formats such as PNG, GIF, WEBP, PDF, SVG, BMP, and TIFF are rejected. |
+| ☐ | UI-016 | High | Validate that an appropriate validation message is displayed for unsupported file formats. |
+| ☐ | UI-017 | High | Validate that renaming an unsupported file extension to .jpeg does not bypass file validation. |
+| ☐ | UI-018 | High | Validate that a corrupted JPEG image cannot be successfully uploaded. |
+| ☐ | UI-019 | High | Validate that an empty/0-byte JPEG file is rejected. |
+| ☐ | UI-020 | Critical | Validate that the user can replace an existing saved image with another valid JPEG image. |
+| ☐ | UI-021 | High | Validate that only the newly replaced image is displayed after saving. |
+| ☐ | UI-022 | High | Validate that cancelling image replacement keeps the previously saved image unchanged. |
+| ☐ | UI-023 | Critical | Validate that the user can delete an existing saved image. |
+| ☐ | UI-024 | High | Validate that the deleted image disappears from the UI. |
+| ☐ | UI-025 | High | Validate that the image icon disappears after image deletion. |
+| ☐ | UI-026 | Critical | Validate that the entity can still be saved after deleting its image. |
+| ☐ | UI-027 | Medium | Validate that cancelling file selection does not change the current image state. |
+| ☐ | UI-028 | Medium | Validate that a valid JPEG with a long filename can be uploaded successfully. |
+| ☐ | UI-029 | Medium | Validate that supported spaces and special characters in the filename do not break the upload flow. |
+| ☐ | UI-030 | High | Validate that an upload failure does not display the image as successfully saved. |
+| ☐ | UI-031 | High | Validate that repeated Save actions do not create duplicate images. |
+| ☐ | UI-032 | Medium | Validate that image upload, replace, and delete functionality works across supported browsers. |
